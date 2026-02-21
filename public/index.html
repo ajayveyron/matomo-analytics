@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matomo Analytics Repo</title>
+    <style>
+      :root {
+        --bg: #0b1220;
+        --panel: #121a2b;
+        --text: #e5e7eb;
+        --muted: #93a3b8;
+        --accent: #4f9cf9;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        background: radial-gradient(circle at top, #17233b 0%, var(--bg) 55%);
+        color: var(--text);
+      }
+
+      main {
+        width: min(780px, 92vw);
+        background: color-mix(in srgb, var(--panel) 92%, black);
+        border: 1px solid #26334f;
+        border-radius: 14px;
+        padding: 28px;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(1.4rem, 3vw, 2rem);
+      }
+
+      p {
+        margin: 0 0 10px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      code {
+        color: var(--text);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>matomo-analytics</h1>
+      <p>
+        This Vercel deployment is linked to the
+        <a href="https://github.com/ajayveyron/matomo-analytics">GitHub repository</a>
+        and auto-deploys on pushes to <code>main</code>.
+      </p>
+      <p>
+        The actual Matomo stack in this repo runs via Docker Compose
+        (<code>matomo + mariadb</code>) and is intended for VM/server hosting.
+      </p>
+    </main>
+  </body>
+</html>
